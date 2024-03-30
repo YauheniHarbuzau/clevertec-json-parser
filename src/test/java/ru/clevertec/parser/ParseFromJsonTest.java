@@ -60,7 +60,7 @@ class ParseFromJsonTest {
         Customer expectedCustomer = gson.fromJson(json, Customer.class);
         Customer actualCustomer = parser.parse(json.replace(" ", ""), Customer.class);
 
-        // than
+        // then
         assertAll(
                 () -> assertEquals(expectedCustomer.getId(), actualCustomer.getId()),
                 () -> assertEquals(expectedCustomer.getFirstName(), actualCustomer.getFirstName()),

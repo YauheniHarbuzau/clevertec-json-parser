@@ -59,7 +59,7 @@ class ParseToJsonTest {
         String expectedJson = gson.toJson(customer);
         String actualJson = parser.parse(customer);
 
-        // than
+        // then
         assertEquals(expectedJson, actualJson);
     }
 }
